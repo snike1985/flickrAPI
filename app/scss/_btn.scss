@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid $green;
+  background: $green;
+  color: $white;
+  cursor: pointer;
+
+  &.active {
+    color: $green;
+    background: $white;
+  }
+
+  &:hover {
+    color: $green;
+    background: $white;
+  }
+}

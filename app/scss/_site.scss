@@ -1,0 +1,17 @@
+.site {
+  overflow: hidden;
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  z-index: 1;
+  background: $white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: $text;
+  font-size: 14px;
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

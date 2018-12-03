@@ -1,0 +1,117 @@
+<section class="list">
+
+	<div class="list__filter">
+		<select name="episodes" id="episodes">
+			<option value="0">All Episodes</option>
+			<option value="1">First Episode</option>
+			<option value="2">Second Episode</option>
+		</select>
+
+		<div class="list__views <%= filter %>">
+			<div class="list__views-item" data-view="list-view">
+				<svg viewBox="0 0 12 12">
+					<rect x="0" y="0" width="12" height="1.5" rx="0.75"></rect>
+					<rect x="0" y="5.25" width="12" height="1.5" rx="0.75"></rect>
+					<rect x="0" y="10.5" width="12" height="1.5" rx="0.75"></rect>
+				</svg>
+			</div>
+			<div class="list__views-item active" data-view="card-view">
+				<svg viewBox="0 0 12 12">
+					<rect x="0" y="0" width="4.5" height="4.5" rx="1"></rect>
+					<rect x="0" y="7.5" width="4.5" height="4.5" rx="1"></rect>
+					<rect x="7.5" y="0" width="4.5" height="4.5" rx="1"></rect>
+					<rect x="7.5" y="7.5" width="4.5" height="4.5" rx="1"></rect>
+				</svg>
+			</div>
+		</div>
+	</div>
+
+	<% if( content == 'blog' ) {
+	%>
+	<div class="list__wrap">
+
+		<div class="list__item">
+			@require('blog-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item hide-if-list-view">
+			@require('description-info.html', {"type": "red"})
+		</div>
+
+		<div class="list__item">
+			@require('blog-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('blog-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('blog-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('blog-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('blog-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('blog-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+	</div>
+
+	<div class="list__footer">
+		<a href="#" class="btn btn_red">Load More</a>
+	</div>
+	<%
+	} %>
+
+	<% if( content == 'podcast' ) {
+	%>
+	<div class="list__wrap">
+
+		<div class="list__item">
+			@require('podcast-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item hide-if-list-view">
+			@require('description-info.html', {"type": "green"})
+		</div>
+
+		<div class="list__item">
+			@require('podcast-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('podcast-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('podcast-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('podcast-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('podcast-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+		<div class="list__item">
+			@require('podcast-preview.html', {"image": "../pic/hero-mob.png"})
+		</div>
+
+	</div>
+
+	<div class="list__footer">
+		<a href="#" class="btn btn_green">Load More</a>
+	</div>
+	<%
+	} %>
+
+</section>
